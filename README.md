@@ -1,5 +1,4 @@
-## Hi there! 👋 
-## I'm Alan
+## Hi there! 👋 I'm Alan
 ## About Me
 
 I'm a Junior Software Developer skilled in building web applications using HTML, CSS, JavaScript, and PHP.  
