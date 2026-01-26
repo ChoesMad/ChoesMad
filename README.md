@@ -6,10 +6,8 @@ I also have basic experience with C# and Unity.
 I enjoy solving problems and continuously improving my development skills.
 
 ## Known languages:
-  - HTML
-  - CSS
-  - JAVASCRIPT
-  - PHP
+  - HTML & CSS
+  - JAVASCRIPT & PHP
   - C#
 ## Known tools
   - Unity
