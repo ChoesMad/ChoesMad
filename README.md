@@ -1,41 +1,76 @@
-## Hi there! 👋 I'm Alan
+## Hi there!👋 I'm Alan
 ## About Me
 
-I'm a Junior Software Developer skilled in building web applications using HTML, CSS, JavaScript, and PHP.  
-I also have basic experience with C# and Unity.  
-I enjoy solving problems and continuously improving my development skills.
+I'm a Junior Software Developer focused on building structured application systems using **C# and Unity**, as well as responsive interfaces using **HTML, CSS, and JavaScript**.
 
-## Known languages:
-  - HTML & CSS
-  - JAVASCRIPT & PHP
-  - C#
-## Known tools
-  - Unity
-  - Visual Studio
+I design and implement logic-driven systems including authentication flows, session management, state-based workflows, and business logic simulations.  
+I enjoy solving real problems, thinking about clean architecture, and continuously improving the quality of my code.
 
-### Some of my projects
+---
+
+## Known Languages
+- C#
+- JavaScript
+- HTML & CSS
+- PHP
+
+## Known Tools & Technologies
+- Unity
+- Visual Studio
+- JSON data handling
+
+## Some of My Projects
+
 <details>
-  <summary>Personal Website</summary>
-  A simple responsive website built as a personal/portfolio project.  
-  The goal of this project was to practice clean layout, basic interactivity, and modern front-end fundamentals.
+  <summary>3D Banking System Simulation (Unity, C#)</summary>
 
-## 🚀 Features
+A structured interactive banking system built in Unity.
+
+### Built With
+- C#
+- UNITY
+  
+### Features
+- User login & authentication system
+- JSON-based user data storage
+- Session management using Singleton pattern
+- Creditworthiness calculation algorithm
+- State-driven dialogue system
+- NPC interaction workflow
+- Scene transitions & lifecycle handling
+- UI panel management
+- Player movement & animation control
+
+### Architecture Highlights
+- Clear separation between authentication, session storage, business logic, and UI
+- Loan system independent from data loading layer
+- Manual state machine implementation
+- Controlled scene-based application flow
+
+This project demonstrates structured system design, data flow control, and business logic implementation inside an interactive 3D environment.
+
+</details>
+
+<details>
+  <summary> Personal Website (Frontend)</summary>
+
+A responsive personal website built from scratch using pure HTML, CSS, and JavaScript.
+
+### Features
 - Responsive layout (desktop & mobile)
-- Clean and simple UI
+- Clean UI structure
 - Basic JavaScript interactivity
 - Hosted with GitHub Pages
 
-## 🛠️ Built With
+### Built With
 - HTML
 - CSS
 - JavaScript
 
-## 🌍 Live Demo
-👉 [View the website](https://ChoesMad.github.io)
+### Live Demo
+[View the website](https://ChoesMad.github.io)
 
-## 📌 Purpose
-This project was created as a learning and portfolio project to strengthen front-end fundamentals and web development workflow.
+### Purpose
+Created to strengthen front-end fundamentals, layout structuring, and UI design principles.
 
-## 📄 License
-This project is open for learning and demonstration purposes.
 </details>
