@@ -29,6 +29,7 @@ A structured interactive banking system built in Unity.
 ### Built With
 - C#
 - UNITY
+- JSON data
   
 ### Features
 - User login & authentication system
