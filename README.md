@@ -48,8 +48,9 @@ A structured interactive banking system built in Unity.
 - Manual state machine implementation
 - Controlled scene-based application flow
 
-This project demonstrates structured system design, data flow control, and business logic implementation inside an interactive 3D environment.
+This project demonstrates structured system design, data flow control, and business logic implementation inside an interactive 3D environment. 
 
+[Game video](https://youtu.be/OeWlgDgr2Nk)
 </details>
 
 <details>
