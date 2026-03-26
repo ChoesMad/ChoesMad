@@ -55,6 +55,34 @@ This project demonstrates structured system design, data flow control, and busin
 </details>
 
 <details>
+  <summary>CLI Password Manager</summary>
+
+A secure, zero-knowledge command-line utility for local credential management.
+
+### Built With
+- PYTHON
+- SQLITE
+- CRYPTOGRAPHY (AES-256)
+- CLICK & RICH (UI)
+
+### Features
+- **AES-256 Symmetric Encryption** for all stored credentials
+- **Secure Master Password Hashing** using PBKDF2 with unique salts
+- **Local-first SQLite Database** ensuring data privacy and offline access
+- **Interactive CLI** with color-coded tables and professional formatting
+- **Secure CRUD Operations** (Create, Read, Update, Delete) for accounts
+
+### Architecture Highlights
+- **Zero-Knowledge Architecture:** Sensitive data is never stored in plain text; decryption keys exist only in RAM during the active session
+- **Authenticated Cryptography:** Implementation of the Fernet standard to prevent unauthorized data tampering
+- **Modular Design:** Clear separation between encryption logic, database management, and the CLI layer
+
+This project demonstrates practical backend logic, understanding of cybersecurity principles, and efficient data handling in Python.
+
+[Project video](https://youtu.be/owpl66dOqw0)
+</details>
+
+<details>
   <summary> Personal Website (Frontend)</summary>
 
 A responsive personal website built from scratch using pure HTML, CSS, and JavaScript.
