@@ -10,6 +10,7 @@ I enjoy solving real problems, thinking about clean architecture, and continuous
 
 ## Known Languages
 - C#
+- Python
 - JavaScript
 - HTML & CSS
 - PHP
