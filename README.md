@@ -55,7 +55,7 @@ This project demonstrates structured system design, data flow control, and busin
 </details>
 
 <details>
-  <summary>CLI Password Manager</summary>
+  <summary>CLI Password Manager (python)</summary>
 
 A secure, zero-knowledge command-line utility for local credential management.
 
