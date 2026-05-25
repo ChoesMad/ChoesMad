@@ -9,7 +9,7 @@ I enjoy solving real problems, thinking about clean architecture, and continuous
 ---
 
 ## Known Languages
--Java & Spring Boot
+- Java & Spring Boot
 - C#
 - Python
 - HTML & CSS
@@ -58,7 +58,7 @@ A backend API for a VOD streaming platform built with Java and Spring Boot.
 
 This project demonstrates practical backend development skills, secure API design, and working with modern Java web technologies.
 
-[Game video](https://youtu.be/yypB-30hrFk)
+[Video](https://youtu.be/yypB-30hrFk)
 </details>
 
 <details>
