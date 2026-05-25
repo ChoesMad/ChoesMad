@@ -9,18 +9,57 @@ I enjoy solving real problems, thinking about clean architecture, and continuous
 ---
 
 ## Known Languages
+-Java & Spring Boot
 - C#
 - Python
-- JavaScript
 - HTML & CSS
+- JavaScript
 - PHP
 
 ## Known Tools & Technologies
 - Unity
 - Visual Studio
+- Swagger UI
 - JSON data handling
+- Spring Security
+- JWT
+- MySQL
 
 ## Some of My Projects
+
+<details>
+  <summary>StreamCDA Backend API (Java, Spring Boot)</summary>
+
+A backend API for a VOD streaming platform built with Java and Spring Boot.
+
+### Built With
+- Java
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- Swagger UI
+- Hibernate / JPA
+- MySQL
+
+### Features
+- User registration and login
+- JWT-based authentication and authorization
+- Role system with USER, PREMIUM, and ADMIN access
+- Movie management endpoints
+- User management endpoints
+- API testing and documentation with Swagger UI
+
+### Architecture Highlights
+- RESTful backend architecture
+- Secure token-based authentication
+- Role-based access control
+- Clean separation between controllers, services, and data layers
+- API documentation and testing through Swagger UI
+
+This project demonstrates practical backend development skills, secure API design, and working with modern Java web technologies.
+
+[Game video](https://youtu.be/yypB-30hrFk)
+</details>
 
 <details>
   <summary>3D Banking System Simulation (Unity, C#)</summary>
