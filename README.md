@@ -1,10 +1,8 @@
 ## Hi there!👋 I'm Alan
 ## About Me
 
-I'm a Junior Software Developer focused on building structured application systems using **C# and Unity**, as well as responsive interfaces using **HTML, CSS, and JavaScript**.
-
-I design and implement logic-driven systems including authentication flows, session management, state-based workflows, and business logic simulations.  
-I enjoy solving real problems, thinking about clean architecture, and continuously improving the quality of my code.
+Junior Developer focused on backend development with Java and Spring Boot — REST APIs, JWT authentication, role-based access, and Spring Data JPA. 
+Also comfortable with C# and basic web frontend (HTML, CSS, JavaScript). I enjoy solving real problems and continuously improving the quality of my code.
 
 ---
 
