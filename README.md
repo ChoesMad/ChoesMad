@@ -1,29 +1,65 @@
 ## Hi there!👋 I'm Alan
 ## About Me
 
-Junior Developer focused on backend development with Java and Spring Boot — REST APIs, JWT authentication, role-based access, and Spring Data JPA. 
-Also comfortable with C# and basic web frontend (HTML, CSS, JavaScript). I enjoy solving real problems and continuously improving the quality of my code.
+Junior Java Developer focused on backend development with Java and Spring Boot.
+I've built two REST APIs from scratch: a streaming platform backend with JWT authentication and role-based access,
+and a GitHub proxy using Java Virtual Threads and Spring's declarative HTTP clients, with integration tests.
+Also comfortable with C# (Unity) and basic web frontend. I enjoy solving real problems and continuously improving the quality of my code.
 
 ---
 
 ## Known Languages
-- Java & Spring Boot
+- Java
 - C#
 - Python
 - HTML & CSS
 - JavaScript
-- PHP
+- SQL
 
 ## Known Tools & Technologies
-- Unity
-- Visual Studio
-- Swagger UI
-- JSON data handling
-- Spring Security
-- JWT
+- Spring Boot, Spring Security, Spring Data JPA / Hibernate
+- JWT authentication
+- JUnit 5, Mockito, WireMock, MockMvc
+- Swagger / OpenAPI
 - MySQL
+- Git & GitHub
+- Gradle
+- IntelliJ IDEA, Visual Studio
+- Unity
 
 ## Some of My Projects
+
+<details>
+  <summary>GitHub Proxy REST API (Java 25, Spring Boot 4)</summary>
+
+A REST API that acts as a proxy for the GitHub API, returning a user's non-fork repositories with their branches and last commit SHAs.
+
+### Built With
+- Java 25 (Virtual Threads)
+- Spring Boot 4
+- Spring Web (RestClient, declarative HTTP clients)
+- WireMock (integration testing)
+- Gradle (Kotlin DSL)
+
+### Features
+- Lists a GitHub user's repositories, excluding forks
+- Returns branches with the last commit SHA for each repository
+- Structured 404 JSON response for unknown users
+- Header-based API versioning (X-API-Version)
+- Parallel branch fetching using Java Virtual Threads
+- Built-in resilience: retries with backoff, concurrency limiting, HTTP timeouts
+
+### Architecture Highlights
+- Layered architecture: controller → service → client
+- Declarative HTTP client interface (@HttpExchange) registered via @ImportHttpServices
+- Retries applied only to transient errors (5xx, timeouts) — 404 is never retried
+- Null-safety with JSpecify (@NullMarked)
+- Integration tests with WireMock and MockMvc covering fork filtering, empty results, and error responses
+
+This project demonstrates working with the newest Java and Spring Boot features, external API integration, concurrency, and integration testing without mocks.
+
+[Repository](https://github.com/ChoesMad/github-proxy-rest-api)
+</details>
 
 <details>
   <summary>StreamCDA Backend API (Java, Spring Boot)</summary>
