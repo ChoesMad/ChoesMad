@@ -1,14 +1,22 @@
 ## Hi there!👋 I'm Alan
 ## About Me
 
-Junior Java Developer focused on backend development with Java and Spring Boot.
-I've built two REST APIs from scratch: a streaming platform backend with JWT authentication and role-based access,
-and a GitHub proxy using Java Virtual Threads and Spring's declarative HTTP clients, with integration tests.
-Also comfortable with C# (Unity) and basic web frontend. I enjoy solving real problems and continuously improving the quality of my code.
+Junior Unreal Engine Developer (C++) passionate about building real-time, interactive
+3D systems — from gameplay logic to the data feeding it. I recently shipped a
+full-stack property visualization app: a Spring Boot REST API driving a live,
+interactive Unreal Engine 5 scene, with real-time filtering, reservations, and
+purchases reflected instantly in the 3D world. 
+I also enjoy working on the backend side of things — building REST APIs, thinking
+through state machines and system architecture — which means I tend to think about
+gameplay features not just as isolated code, but as part of a whole system talking
+to a server, a database, or another layer underneath. Comfortable in both Unreal
+(C++, Blueprints/UMG) and Unity (C#), and I like picking apart *why* something is
+built a certain way, not just getting it to run.
 
 ---
 
 ## Known Languages
+- C++
 - Java
 - C#
 - Python
@@ -17,17 +25,113 @@ Also comfortable with C# (Unity) and basic web frontend. I enjoy solving real pr
 - SQL
 
 ## Known Tools & Technologies
+- Unreal Engine 5
+- Unity
 - Spring Boot, Spring Security, Spring Data JPA / Hibernate
 - JWT authentication
 - JUnit 5, Mockito, WireMock, MockMvc
-- Swagger / OpenAPI
-- MySQL
 - Git & GitHub
 - Gradle
 - IntelliJ IDEA, Visual Studio
-- Unity
 
 ## Some of My Projects
+
+<details>
+  <summary>An interactive 3D residential estate visualization powered by real-time REST data. Allows users to filter apartments, click buildings in a 3D environment, reserve, and purchase units — dynamically recoloring building window materials live without page or scene reloads.</summary>
+
+### Built With
+- Unreal Engine 5.8 (C++, Enhanced Input, UMG)
+- Java 25 & Spring Boot 4.1.1
+- Spring Data JPA & PostgreSQL
+- Gradle (Kotlin DSL)
+- JUnit 5 & Spring Boot Test (MockMvc, @DataJpaTest)
+
+### Features
+- Real-time 3D window material recoloring across 35 physical building actors (506 total apartments) based on status (Available, Reserved, Sold)
+- Interactive client-side filtering by price, room count, and garage availability that dynamically updates 3D visual feedback
+- Interactive 3D building selection featuring UMG UI panels for reserving and purchasing units
+- Backend-enforced state machine ensuring strict status lifecycle transitions (AVAILABLE → RESERVED → SOLD) with explicit error handling (409 Conflict)
+- Comprehensive REST API providing health checks, apartment listing/filtering, reservation, and purchasing endpoints
+
+### Architecture Highlights
+- Event-Driven C++ Subsystem (UEstateApiSubsystem): Serves as the single source of truth in Unreal Engine, utilizing dynamic delegates with zero Tick() polling overhead
+- Dynamic Material Recoloring: Overcomes merged mesh geometry transform constraints by modifying material instance slots (UMaterialInstanceDynamic) directly rather than actor transforms
+- In-Memory Client Filtering: Caches backend data locally to make interactive UI sliders instant while eliminating HTTP request flooding
+- Clean Backend Layering: Classic Controller → Service → Repository structure with strict DTO/Entity isolation and explicit exception mapping
+- Comprehensive Backend Testing: Multi-layered test coverage across JPA repositories, services, and REST controllers validating all state machine transitions
+
+This project demonstrates C++ REST integration in Unreal Engine 5, event-driven 3D visual reactivity, backend state machine enforcement, and clean client-server architecture.
+
+[Game video](https://youtu.be/CzkQj9QpNNQ)
+</details>
+
+<details>
+  <summary>3D Banking System Simulation (Unity, C#)</summary>
+
+A structured interactive banking system built in Unity.
+
+### Built With
+- C#
+- UNITY
+- JSON data
+  
+### Features
+- User login & authentication system
+- JSON-based user data storage
+- Session management using Singleton pattern
+- Creditworthiness calculation algorithm
+- State-driven dialogue system
+- NPC interaction workflow
+- Scene transitions & lifecycle handling
+- UI panel management
+- Player movement & animation control
+
+### Architecture Highlights
+- Clear separation between authentication, session storage, business logic, and UI
+- Loan system independent from data loading layer
+- Manual state machine implementation
+- Controlled scene-based application flow
+
+This project demonstrates structured system design, data flow control, and business logic implementation inside an interactive 3D environment. 
+
+[Game video](https://youtu.be/OeWlgDgr2Nk)
+</details>
+
+<details>
+  <summary>Game Backlog Tracker</summary>
+A REST API for tracking a personal video game backlog, enabling users to search games via the RAWG database, import them into a local library, and manage play statuses and ratings.
+
+### Built With
+- Java 25 (Virtual Threads, Records, Text Blocks)
+- Spring Boot 4.1 & Spring Framework 7
+- Spring Data JPA, Hibernate 7, PostgreSQL 17
+- Flyway (Database Migrations)
+- Declarative @HttpExchange client over RestClient
+- Native Resilience (@Retryable, @ConcurrencyLimit)
+- JSpecify (@NullMarked)
+- Testcontainers & WireMock (Integration Testing)
+- Gradle 9 (Kotlin DSL)
+
+### Features
+- Search games on RAWG API via a lightweight proxy
+- Idempotent game importing with parallel details fetching using Java Virtual Threads
+- Complete backlog lifecycle tracking (Planned, Playing, Completed, Dropped with optional 1–10 ratings)
+- Header-based API versioning (X-API-Version)
+- Standardized error responses (ApiError) for validation, proxy timeouts, and upstream failures
+- Paginated and sortable backlog listings
+
+### Architecture Highlights
+- Deliberately flat, three-layer architecture (Controller → Service → Repository / Gateway) with entity/DTO isolation using Java Records
+- Zero-dependency resilience using native Spring Framework 7 annotations (@Retryable for transient 5xx/timeouts, @ConcurrencyLimit for Virtual Threads protection)
+- Database schema fully owned by Flyway migrations (ddl-auto=validate)
+- Efficient JPA fetch strategies using lazy relations paired with @EntityGraph to prevent N+1 queries
+- Off-thread RAWG imports keeping database connection hold times to a minimum
+- Fast, reproducible integration testing using real PostgreSQL containers and WireMock HTTP stubs
+
+This project demonstrates modern Spring Boot 4 and Java 25 capabilities, lightweight resilience patterns, clean API design, and integration testing without external dependencies.
+
+[Repository](https://github.com/ChoesMad/game-backlog-tracker)
+</details>
 
 <details>
   <summary>GitHub Proxy REST API (Java 25, Spring Boot 4)</summary>
@@ -93,38 +197,6 @@ A backend API for a VOD streaming platform built with Java and Spring Boot.
 This project demonstrates practical backend development skills, secure API design, and working with modern Java web technologies.
 
 [Video](https://youtu.be/yypB-30hrFk)
-</details>
-
-<details>
-  <summary>3D Banking System Simulation (Unity, C#)</summary>
-
-A structured interactive banking system built in Unity.
-
-### Built With
-- C#
-- UNITY
-- JSON data
-  
-### Features
-- User login & authentication system
-- JSON-based user data storage
-- Session management using Singleton pattern
-- Creditworthiness calculation algorithm
-- State-driven dialogue system
-- NPC interaction workflow
-- Scene transitions & lifecycle handling
-- UI panel management
-- Player movement & animation control
-
-### Architecture Highlights
-- Clear separation between authentication, session storage, business logic, and UI
-- Loan system independent from data loading layer
-- Manual state machine implementation
-- Controlled scene-based application flow
-
-This project demonstrates structured system design, data flow control, and business logic implementation inside an interactive 3D environment. 
-
-[Game video](https://youtu.be/OeWlgDgr2Nk)
 </details>
 
 <details>
