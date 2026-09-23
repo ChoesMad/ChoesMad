@@ -99,7 +99,7 @@ This project demonstrates structured system design, data flow control, and busin
 </details>
 
 <details>
-  <summary>Game Backlog Tracker</summary>
+  <summary>Game Backlog Tracker (Java 25, Spring Boot 4)</summary>
 A REST API for tracking a personal video game backlog, enabling users to search games via the RAWG database, import them into a local library, and manage play statuses and ratings.
 
 ### Built With
