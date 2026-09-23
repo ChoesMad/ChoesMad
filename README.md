@@ -37,8 +37,9 @@ built a certain way, not just getting it to run.
 ## Some of My Projects
 
 <details>
-  <summary>An interactive 3D residential estate visualization powered by real-time REST data. Allows users to filter apartments, click buildings in a 3D environment, reserve, and purchase units — dynamically recoloring building window materials live without page or scene reloads.</summary>
-
+  <summary>Real-Time Interactive Estate Hub (UE5, C++, Spring Boot, PostgreSQL)</summary>
+    
+An interactive 3D residential estate visualization powered by real-time REST data. Allows users to filter apartments, click buildings in a 3D environment, reserve, and purchase units — dynamically recoloring building window materials live without page or scene reloads.
 ### Built With
 - Unreal Engine 5.8 (C++, Enhanced Input, UMG)
 - Java 25 & Spring Boot 4.1.1
